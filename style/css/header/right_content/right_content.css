@@ -1,0 +1,7 @@
+@import "menu/menu.css";
+@import "header_buttons/header_buttons.css";
+
+.header__right_content {
+    display: flex;
+    align-items: center;
+}
