@@ -1,0 +1,45 @@
+.presentation {
+    display: flex;
+}
+.presentation__information {
+    flex: 40%;
+    display: flex;
+    padding: 64px;
+    justify-content: end;
+    flex-direction: column;
+    max-width: 40%;
+    background-color: #3F3B3D;
+    margin-top: 80px;
+}
+.presentation__image {
+    flex: 60%;
+    max-width: 60%;
+}
+.presentation__title {
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 42px;
+    margin-bottom: 28px;
+    color: #ffffff;
+}
+.presentation__buttons {
+
+}
+.presentation__btn {
+    border: none;
+    border-radius: 3px;
+    background-color: inherit;
+    padding: 12px 26px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.presentation__btn:hover {
+
+}
+.presentation__btn:first-child {
+    background-color: var(--baseColor2);
+    margin-right: 8px;
+}

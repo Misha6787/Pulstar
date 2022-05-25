@@ -4,6 +4,7 @@
 :root {
     --baseAnimation: 0.4s ease-in-out;
     --baseColor: #3F3B3D;
+    --baseColor2: #F14814;
     --baseColorActive: #ffb56b;
 }
 
