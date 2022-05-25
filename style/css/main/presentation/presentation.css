@@ -1,5 +1,6 @@
 .presentation {
     display: flex;
+    margin-bottom: 60px;
 }
 .presentation__information {
     flex: 40%;
@@ -35,9 +36,13 @@
     line-height: 21px;
     color: #ffffff;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
-.presentation__btn:hover {
-
+.presentation__btn:first-child:hover {
+    background-color: var(--baseColorActive);
+}
+.presentation__btn:last-child:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .presentation__btn:first-child {
     background-color: var(--baseColor2);

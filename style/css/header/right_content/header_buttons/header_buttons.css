@@ -22,7 +22,7 @@
 }
 .basket {
     display: flex;
-    background: #F8F9FA;
+    background: var(--baseBgColor);
     border-radius: 3px;
 }
 .basket:before {

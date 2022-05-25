@@ -4,8 +4,10 @@
 :root {
     --baseAnimation: 0.4s ease-in-out;
     --baseColor: #3F3B3D;
-    --baseColor2: #F14814;
+    --baseColor2: #5D6E67;
     --baseColorActive: #ffb56b;
+    --baseColorActive2: #F14814;
+    --baseBgColor: #F8F9FA;
 }
 
 /* Общие стили */
@@ -16,7 +18,7 @@ body {
     line-height: 19px;
 }
 .container {
-    max-width: 1248px;
+    max-width: calc(100% - 112px);
     margin: 0 auto 0 auto;
 }
 a {
@@ -76,7 +78,7 @@ a:not([class]) {
 
 /* Упрощаем работу с изображениями */
 img {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
