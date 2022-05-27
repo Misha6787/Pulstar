@@ -97,7 +97,26 @@
     margin-bottom: 16px;
 }
 .footer__column-link {
+    position: relative;
     color: #FFFFFF;
+    transition: var(--baseAnimation);
+}
+.footer__column-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--baseColorActive);
+    bottom: -2px;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    transition: var(--baseAnimation);
+}
+.footer__column-link:hover:after {
+    width: 100%;
+}
+.footer__column-link:hover {
+    color: var(--baseColorActive);
 }
 .footer__column-link:not(:last-child) {
     margin-bottom: 3px;
