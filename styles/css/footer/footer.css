@@ -1,0 +1,112 @@
+.footer {
+    background-color: #3F3B3D;
+    padding: 96px 80px 32px 80px;
+}
+.footer__content {
+    color: #FFFFFF;
+}
+.footer__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.footer__gallery {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 64px;
+}
+.footer__gallery-item {
+    position: relative;
+    transition: var(--baseAnimation);
+    width: 100%;
+    cursor: pointer;
+}
+.footer__gallery-item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/icnons/magnifying-glass-plus-solid.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 96px 96px;
+    background-color: rgba(0,0,0,0.4);
+    transition: var(--baseAnimation);
+    opacity: 0;
+    z-index: 9999;
+}
+.footer__gallery-item:hover:after {
+    opacity: 1;
+}
+.footer__gallery-item:not(:last-child) {
+    margin-right: 32px;
+}
+.footer__information {
+    display: flex;
+    margin-bottom: 32px;
+}
+.footer__item {
+    flex: 50%;
+    width: 50%;
+}
+.footer__item.footer__text {
+    position: relative;
+}
+.footer__item.footer__text:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: #FFFFFF;
+    width: 80%;
+    left: 0;
+    bottom: 22px;
+}
+.footer__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__column {
+    flex: 33%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.footer__column-title,
+.footer__column-link,
+.footer__copyright,
+.footer__copyright-author {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+.footer__column-title {
+    letter-spacing: 0.16px;
+    margin-bottom: 16px;
+}
+.footer__column-link {
+    color: #FFFFFF;
+}
+.footer__column-link:not(:last-child) {
+    margin-bottom: 3px;
+}
+.footer__copyright {
+    padding-top: 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    margin-right: 6px;
+}
+.footer__copyright-author {
+    color: var(--baseColorActive2)
+}
