@@ -24,7 +24,8 @@
     color: #ffffff;
 }
 .presentation__buttons {
-
+    display: flex;
+    justify-content: space-between;
 }
 .presentation__btn {
     border: none;
@@ -47,4 +48,10 @@
 .presentation__btn:first-child {
     background-color: var(--baseColor2);
     margin-right: 8px;
+}
+
+@media(max-width: 1324px) {
+    .presentation__btn {
+        font-size: 14px;
+    }
 }

@@ -21,7 +21,7 @@
     margin: 0 auto 60px auto;
     color: var(--baseColor);
 }
-.our-advantages__blocks {
+.our-advantages .our-advantages__blocks {
     width: 70%;
     display: flex;
     justify-content: space-between;
