@@ -6,14 +6,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/animate.min.css">
     <link rel="stylesheet" href="styles/css/style.css">
     <title>pulstar</title>
 </head>
 <body class="page">
     <header class="header">
         <div class="container">
-            <a href="#" class="header__icon">
-                <img src="./images/header/icon.png" alt="icon">
+            <a href="#" class="site__logo">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 500 80">
+                    <text y="50" font-size="32" font-weight="bold"
+                          font-family="Avenir, Helvetica, sans-serif">
+                        pulstar
+                    </text>
+                </svg>
             </a>
             <div class="header__right_content">
                 <nav class="menu">
@@ -280,9 +286,23 @@
             <div class="footer__copyright">© Pulstar powered by <span class="footer__copyright-author">Webflow</span></div>
         </div>
     </footer>
-    <div class="modal__gallery"></div>
-    <div class="modal__send-contacts"></div>
-    <div class="menu__modal-block">
+    <section class="modal__gallery">
+        <div class="modal__gallery-content fadeInUp">
+            <button class="modal__gallery-close"></button>
+            <img src="/images/footer/gallery/footer_image_1.png" alt="galley_image" class="modal__gallery-img">
+        </div>
+    </section>
+    <section class="modal__send-contacts"></section>
+    <section class="menu__modal-block fadeInRight">
+        <a href="#" class="site__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 80">
+                <text x="50%" y="50" text-anchor="middle" font-size="64" font-weight="bold" stroke-width="100%"
+                      font-family="Avenir, Helvetica, sans-serif">
+                    pulstar
+                </text>
+            </svg>
+        </a>
+
         <nav class="menu__modal">
             <ul class="menu__modal-list">
                 <li class="menu__modal-item">
@@ -302,6 +322,9 @@
                 </li>
             </ul>
         </nav>
-    </div>
+        <button class="menu__modal-close"></button>
+    </section>
+    <script src="scripts/header/openMenu.js"></script>
+    <script src="scripts/footer/footerGallery.js"></script>
 </body>
 </html>

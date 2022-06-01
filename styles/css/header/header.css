@@ -5,7 +5,7 @@
     top: 0;
     background: #ffffff;
     filter: drop-shadow(0px 4px 18px rgba(0, 0, 0, 0.1));
-    z-index: 9999999;
+    z-index: 99999;
 }
 
 .header .container {
@@ -15,8 +15,10 @@
     padding: 12px 0;
 }
 
-.header__icon {
+.site__logo {
+    width: 100%;
     cursor: pointer;
+    fill: var(--baseColor);
 }
 
 
