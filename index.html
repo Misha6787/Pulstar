@@ -15,7 +15,7 @@
         <div class="container">
             <a href="#" class="site__logo">
                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 500 80">
-                    <text y="50" font-size="32" font-weight="bold"
+                    <text y="60" font-size="96" font-weight="bold"
                           font-family="Avenir, Helvetica, sans-serif">
                         pulstar
                     </text>
@@ -59,7 +59,7 @@
                     <h2 class="presentation__title">Shop hundreds of enamel pins from artists.</h2>
                     <div class="presentation__buttons">
                         <button class="presentation__btn btn">Shop everything</button>
-                        <button class="presentation__btn">Browse collections</button>
+                        <button class="presentation__btn btn">Browse collections</button>
                     </div>
                 </div>
                 <div class="presentation__image">
@@ -147,6 +147,31 @@
             <div class="review">
                 <div class="review__image">
                     <img src="./images/main/information/quote/quote_image.png" alt="quote_image">
+
+                    <svg class="editorial"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         viewBox="0 24 150 28"
+                         preserveAspectRatio="none">
+                        <defs>
+                            <path id="gentle-wave"
+                                  d="M-160 44c30 0
+                                    58-18 88-18s
+                                    58 18 88 18
+                                    58-18 88-18
+                                    58 18 88 18
+                                    v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="50" y="0" fill="#6BF5E7FF"/> <!-- #4579e2 -->
+                            <use xlink:href="#gentle-wave" x="50" y="3" fill="#adeee8"/> <!-- #3461c1 -->
+                            <use xlink:href="#gentle-wave" x="50" y="6" fill="#DCEAE9"/> <!-- #2d55aa -->
+                        </g>
+                    </svg>
+
+                    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+
+
                 </div>
                 <div class="review__text">
                     <blockquote class="review__quote">“Best templates and support out there! They are always happy to help with any issues you may be having or even just showing how to edit things.”</blockquote>
@@ -237,7 +262,7 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="footer__content">
+        <div class="container footer__content">
             <h2 class="footer__title">Celebrating the <br>perfectly imperfect</h2>
             <div class="footer__gallery">
                 <div class="footer__gallery-item">
@@ -293,7 +318,7 @@
         </div>
     </section>
     <section class="modal__send-contacts"></section>
-    <section class="menu__modal-block fadeInRight">
+    <section class="modal__menu-block fadeInRight">
         <a href="#" class="site__logo">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 80">
                 <text x="50%" y="50" text-anchor="middle" font-size="64" font-weight="bold" stroke-width="100%"
@@ -303,26 +328,26 @@
             </svg>
         </a>
 
-        <nav class="menu__modal">
-            <ul class="menu__modal-list">
-                <li class="menu__modal-item">
-                    <a href="#" class="menu__modal-link">Home</a>
+        <nav class="modal__menu">
+            <ul class="modal__menu-list">
+                <li class="modal__menu-item">
+                    <a href="#" class="modal__menu-link">Home</a>
                 </li>
-                <li class="menu__modal-item">
-                    <a href="#" class="menu__modal-link">About</a>
+                <li class="modal__menu-item">
+                    <a href="#" class="modal__menu-link">About</a>
                 </li>
-                <li class="menu__modal-item">
-                    <a href="#" class="menu__modal-link">Journal</a>
+                <li class="modal__menu-item">
+                    <a href="#" class="modal__menu-link">Journal</a>
                 </li>
-                <li class="menu__modal-item">
-                    <a href="#" class="menu__modal-link">Shop</a>
+                <li class="modal__menu-item">
+                    <a href="#" class="modal__menu-link">Shop</a>
                 </li>
-                <li class="menu__modal-item">
-                    <a href="#" class="menu__modal-link">Contact</a>
+                <li class="modal__menu-item">
+                    <a href="#" class="modal__menu-link">Contact</a>
                 </li>
             </ul>
         </nav>
-        <button class="menu__modal-close"></button>
+        <button class="modal__menu-close"></button>
     </section>
     <script src="scripts/header/openMenu.js"></script>
     <script src="scripts/footer/footerGallery.js"></script>

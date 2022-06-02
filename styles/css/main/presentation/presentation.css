@@ -18,7 +18,7 @@
 }
 .presentation__title {
     font-weight: 400;
-    font-size: 33px;
+    font-size: 2em;
     line-height: 42px;
     margin-bottom: 28px;
     color: #ffffff;
@@ -53,5 +53,58 @@
 @media(max-width: 1324px) {
     .presentation__btn {
         font-size: 14px;
+    }
+}
+@media (max-width: 992px) {
+    .presentation {
+        flex-direction: column;
+    }
+    .presentation__image {
+        display: none;
+    }
+    .presentation__information {
+        flex: 100%;
+        max-width: 100%;
+        background-image: url("/images/main/presentation/presentation_image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .presentation__title {
+        line-height: 1.3;
+        margin-bottom: 96px;
+    }
+    .presentation__btn {
+        padding: 24px 39px;
+        font-size: 24px;
+    }
+    .presentation__btn:last-child {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .presentation__btn:last-child:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+@media (max-width: 768px) {
+    .presentation__buttons {
+        flex-direction: column;
+    }
+    .presentation__btn {
+        flex: 100%;
+        max-width: 100%;
+        margin-right: 0 !important;
+    }
+    .presentation__btn:not(:first-child) {
+        margin-top: 16px;
+    }
+}
+@media (max-width: 568px) {
+    .presentation__information {
+        margin-top: 28px;
+    }
+}
+@media (max-width: 390px) {
+    .presentation__btn {
+        white-space: break-spaces !important;
+        line-height: 1.3;
     }
 }

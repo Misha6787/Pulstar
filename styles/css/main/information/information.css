@@ -19,6 +19,7 @@
 }
 .review__image {
     display: inline-block;
+    position: relative;
     margin-right: 8px;
     max-width: 536px;
 }
@@ -47,14 +48,14 @@
 .sponsors {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     max-width: calc(100% - 112px);
     margin: 0 auto 0 auto;
 }
 .sponsor__block {
     text-align: center;
-}
-.sponsor__block:not(:last-child) {
-    margin-right: 64px;
+    flex: 25%;
+    max-width: 25%;
 }
 .sponsor__image {
     display: flex;
@@ -66,4 +67,75 @@
 }
 .sponsor__description {
     max-width: 256px;
+    margin: 0 auto 0 auto;
+}
+
+@media (max-width: 1048px) {
+    .review {
+        margin: 0 0 64px 0;
+    }
+    .review__image,
+    .review__text {
+        flex: 50%;
+        width: 50%;
+    }
+    .review__quote {
+        margin: 0 16px 28px 16px;
+        font-size: 18px;
+    }
+    .sponsor__block {
+        flex: 50%;
+        max-width: 50%;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 568px) {
+    /*review*/
+    .review {
+        flex-wrap: wrap;
+    }
+    .review__image,
+    .review__text {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .review__image {
+        margin-right: 0;
+    }
+    .review__image .editorial {
+        display: block;
+    }
+    .review__quote {
+        font-size: 24px;
+    }
+    .review__author {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    /*sponsors*/
+    .sponsors {
+        max-width: 100%;
+    }
+    .sponsor__block {
+        flex: 100%;
+        max-width: 100%;
+        margin-top: 48px;
+    }
+
+    .sponsor__image img {
+        width: 60%;
+    }
+    .sponsor__description {
+        max-width: 100%;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 420px) {
+    .information {
+        padding-top: 60px;
+        padding-right: 28px;
+        padding-left: 28px;
+    }
 }

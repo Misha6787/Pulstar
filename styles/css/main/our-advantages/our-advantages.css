@@ -48,3 +48,30 @@
     font-size: 12px;
     line-height: 16px;
 }
+
+@media(max-width: 568px) {
+    .our-advantages__blocks {
+        flex-wrap: wrap;
+    }
+    .our-advantages__block {
+        flex: 100%;
+        max-width: 100%;
+        margin-right: 0 !important;
+    }
+    .our-advantages__block:not(:first-child) {
+        margin-top: 24px;
+    }
+    .our-advantages__block img {
+        width: 40%;
+    }
+    .our-advantages__title {
+        font-size: 28px;
+        margin-bottom: 6px;
+    }
+    .our-advantages__description {
+        font-size: 14px;
+    }
+    .our-advantages__text {
+        width: 90%;
+    }
+}

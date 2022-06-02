@@ -1,22 +1,22 @@
 const menu = () => {
-    let menuModalBlock = document.querySelector('.menu__modal-block'),
+    let modalMenuBlock = document.querySelector('.modal__menu-block'),
         menuBurger = document.querySelector('.menu__burger'),
-        menuModalClose = document.querySelector('.menu__modal-close');
+        modalMenuClose = document.querySelector('.modal__menu-close');
 
     const openMenuModal = item => {
-        menuModalBlock.style.display = 'flex';
-        menuModalBlock.classList.remove('fadeOutDown');
+        modalMenuBlock.style.display = 'flex';
+        modalMenuBlock.classList.remove('fadeOutDown');
     }
 
     const closeMenuModal = () => {
-        menuModalBlock.classList.add('fadeOutDown');
+        modalMenuBlock.classList.add('fadeOutDown');
         setTimeout(() => {
-            menuModalBlock.style.display = 'none';
+            modalMenuBlock.style.display = 'none';
         }, 500)
     }
 
     menuBurger.addEventListener('click', openMenuModal);
-    menuModalClose.addEventListener('click', closeMenuModal);
+    modalMenuClose.addEventListener('click', closeMenuModal);
 }
 
 menu()
