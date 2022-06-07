@@ -1,8 +1,10 @@
 .journal {
     max-width: calc(100% - 112px);
+    max-height: 800px;
     margin: 0 auto 64px auto;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .article-actual,
 .article-other {
@@ -21,7 +23,7 @@
 }
 .article-actual__image img {
     transition: var(--baseAnimation);
-    width: unset;
+    width: 100%;
 }
 .article-actual:hover .article-actual__image img {
     transform: scale(1.5);
@@ -157,6 +159,8 @@
 @media (max-width: 1048px) {
     .journal {
         flex-direction: column;
+        overflow: unset;
+        max-height: unset;
     }
     .article-actual,
     .article-other {

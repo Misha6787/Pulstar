@@ -103,6 +103,9 @@
     }
 }
 @media (max-width: 390px) {
+    .presentation__information {
+        padding: 32px;
+    }
     .presentation__btn {
         white-space: break-spaces !important;
         line-height: 1.3;
