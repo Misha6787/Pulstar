@@ -29,7 +29,7 @@
     content: '';
     position: relative;
     display: block;
-    background-image: url('/images/header/header_buttons/basket.png');
+    background-image: url('Pulstar/images/header/header_buttons/basket.png');
     width: 17px;
     height: 17px;
 }
@@ -49,7 +49,7 @@
     transition: var(--baseAnimation);
 }
 .basket:hover:before {
-    background-image: url('/images/header/header_buttons/basket_active.png');
+    background-image: url('Pulstar/images/header/header_buttons/basket_active.png');
 }
 .basket:hover .counter {
     background: var(--baseColorActive);
